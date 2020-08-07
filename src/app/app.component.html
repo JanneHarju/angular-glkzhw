@@ -1,0 +1,16 @@
+<router-outlet #routerOutlet="outlet"></router-outlet>
+
+<a routerLink="/helloworld">
+  <button class="btn btn-success pull-right" > Hello World</button>
+</a>
+<a routerLink="/dashboard">
+  <button class="btn btn-success pull-right" >Dashboard</button>
+</a>
+
+<br><br><br>
+Check the console log to see the activated component identify itself
+<br>
+
+<div *ngIf="componentExists()">
+  <button (click)="this.identify()" > Identify yourself! </button>
+</div>
